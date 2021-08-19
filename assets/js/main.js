@@ -106,4 +106,12 @@ $(document).ready(function () {
     console.log($("ul.slides").css('margin-left'))
   })
 
+  $("#btn-search").click(function (e) {
+    $(".input-search").addClass("open")
+  })
+
+  $("#close-search").click(function (e) {
+    $(".input-search").removeClass("open")
+  })
+
 });

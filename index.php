@@ -15,6 +15,12 @@
 <body>
     
     <header>
+      <div class="header-notification gray-dark">
+        <p>Century College is OPEN with on-campus and virtual services. <a href="#">View up-to-date student support services and hours ></a></p>
+      </div>
+      <div class="header-notification blue-dark">
+        <p><i class="fas fa-exclamation-triangle"></i> Face coverings are required for ALL vaccinated and unvaccinated employees, students, and visitors while indoors on campus. <a href="#"> Learn more ></a></p>
+      </div>
         <div class="header-main">
             <div class="header-logo">
                 <img src="./assets/images/logo.jpg" alt="" />
@@ -29,10 +35,26 @@
                     <li class="header-menu__item"><a href="#">Search Courses</a></li>
                     <li class="header-menu__item"><a href="#">Transfer</a></li>
                     <li class="header-menu__item"><a href="#">Directory</a></li>
-                    <li class="header-menu__item">
-                      <a href="#" class="header-search"
+                    <li class="header-menu__item seacrh">
+                      <a href="#" class="header-search" id="btn-search"
                         >Search <i class="fas fa-search"></i>
                       </a>
+                      <div class="input-search">
+                        <div class="arrow-up">
+                          
+                        </div>
+                        <div class="title">
+                          <span><i class="fas fa-search"></i> Search</span>
+                          <span id="close-search">X</span>
+                        </div>
+                        <div class="content">
+                          <form action="">
+                            <input type="text" placeholder="enter keywords" id="inp-search">
+                            <button type="submit" id="btn-search"><i class="fas fa-search"></i></button>
+                          </form>
+                          
+                        </div>
+                      </div>
                     </li>
                     <li class="header-menu__item">
                       <a href="#" class="header-login"
@@ -285,7 +307,7 @@
     </header>
 
     <main>
-        <!-- <section class="slide-container">
+        <section class="slide-container">
             <div class="slide-list">
                 <div class="slide-item active">
                     <video muted="" loop="" autoplay="" preload="" webkit-playsinline="" __idm_id__="267920386"><source type="video/mp4" src="https://www.century.edu/sites/default/files/Gain%20a%20New%20Perspective%20NOSOCCER2018.2.mp4"></video>
@@ -368,29 +390,7 @@
                 <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
                 <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
             </div>
-        </section> -->
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/slider-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/slider-2.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        </section>
 
         <section class="main-panel">
             <div class="container">
@@ -944,8 +944,8 @@
       <div class="footer-link">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="footer-item">
+            <div class="footer-item col-12 col-sm-6 col-md-3">
+              <div class="">
                 <h3 class="footer-item__title">Information</h3>
                 <ul>
                   <li><a href="">Directory</a></li>
@@ -957,8 +957,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="footer-item">
+            <div class="footer-item col-12 col-sm-6 col-md-3">
+              <div class="">
                 <h3 class="footer-item__title">Information</h3>
                 <ul>
                   <li><a href="">Bookstore</a></li>
@@ -971,8 +971,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="footer-item">
+            <div class="footer-item col-12 col-sm-6 col-md-3">
+              <div class="">
                 <h3 class="footer-item__title">Information</h3>
                 <ul>
                   <li><a href="">Calendar</a></li>
@@ -980,8 +980,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              <div class="footer-item">
+            <div class="footer-item col-12 col-sm-6 col-md-3">
+              <div class="">
                 <h3 class="footer-item__title">Information</h3>
                 <div class="contact">
                   <div class="address">
