@@ -24,7 +24,7 @@
                     <?php
                         //Lặp lấy dữ liệu và hiển thị ra bảng
                         //Bước 02: Thực hiện Truy vấn
-                        $sql = "SELECT * FROM accountEmployee";
+                        $sql = "SELECT * FROM account";
                         $result = mysqli_query($conn,$sql);
                         if(mysqli_num_rows($result)>0){
                             $i=1;
