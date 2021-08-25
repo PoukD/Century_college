@@ -3,7 +3,7 @@
 class Database {
     const DB_HOST = 'localhost';
     const DB_USERNAME = 'root';
-    const DB_PASSWORD = '12345678';
+    const DB_PASSWORD = '';
     const DB_NAME = 'century';
 
     public function connect() {

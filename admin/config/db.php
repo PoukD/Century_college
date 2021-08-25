@@ -1,7 +1,7 @@
 <?php
     // Bước 01: Kết nối Server:
     //Định nghĩa Hằng số trong PHP
-    define('SITEURL','http://localhost/BTL');
+    define('SITEURL','http://localhost/century');
     define('HOST','localhost');
     define('USER','root');
     define('PASS','');
