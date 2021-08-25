@@ -14,4 +14,42 @@ class UserController extends BaseController {
         return $this->view('admin/User/index', ['data'=>$data]);
     }
 
+    public function get_add() {  
+        return $this->view('admin/User/add');
+    }
+
+    public function post_add() {  
+        $userObject = new UserModel();
+
+        $name     = $_POST['name'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if (!$name || !$username || !$password) {
+            $error = 'Please enter enough information!';
+            return $this->view('admin/User/add', ['error' => $error]);
+        }
+
+        $data = [
+            'name' => $name,
+            'username' => $username,
+            'password' => md5($password)
+        ];
+
+        $userObject->store($data);
+
+        $success = 'Success!';
+        return $this->view('admin/User/add', ['success' => $success]);
+    }
+
+    public function get_delete() { 
+        $id = $_REQUEST['id'];
+
+        $userObject = new UserModel();
+        $userObject->destroy($id);
+
+        $data = $userObject->getAll();
+        return $this->view('admin/User/index', ['success'=>'Deleted!', 'data'=>$data]);
+    }
+
 }

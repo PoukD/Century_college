@@ -1,16 +1,22 @@
 <?php include './Views/admin/layouts/header.php'; ?>
 
 <div class="container">
-    <h3>DANH SÁCH TÀI KHOẢN</h3>
+    <h3>USER LIST</h3>
     <hr>
-    <a href="index.php?controller=user&action=add_new_user"class="btn btn-primary">Thêm mới tài khoản</a>
+    <a href="index.php?controller=user&action=get_add"class="btn btn-primary">Add New User</a>
+    <?php if(isset($success)) { ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?php echo $success; ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php } ?>
     <table class="table table-striped">
     <thead>
         <tr>
-        <th scope="col">STT</th>
-        <th scope="col">Tên</th>
-        <th scope="col">Tài khoản</th>
-        <th scope="col">Chức năng</th>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Method</th>
         </tr>
         </thead>
         <tbody>
@@ -22,8 +28,8 @@
                     <td><?php echo $item['name']; ?></td>
                     <td><?php echo $item['username']; ?></td>
                     <td>
-                        <a href="#" class="btn btn-primary btn-sm">Sửa</a>
-                        <a href="#" class="btn btn-danger btn-sm">Xoá</a>
+                        <a href="" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="?controller=user&action=get_delete&id=<?php echo $item['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                     </tr>
                 <?php } ?>
