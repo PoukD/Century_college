@@ -42,6 +42,44 @@ class UserController extends BaseController {
         return $this->view('admin/User/add', ['success' => $success]);
     }
 
+    public function get_edit() {  
+        $id = $_REQUEST['id'];
+
+        $userObject = new UserModel();
+        $data = $userObject->findById($id);
+
+        return $this->view('admin/User/edit', ['data'=>$data]);
+    }
+
+    public function post_edit() {  
+        $userObject = new UserModel();
+
+        $id = $_REQUEST['id'];
+        
+        $name     = $_POST['name'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if (!$name || !$username ) {
+            $data = $userObject->findById($id);
+            $error = 'Please enter enough information!';
+            return $this->view('admin/User/edit', ['error' => $error, 'data'=>$data]);
+        }
+
+        $dataUpdate = [
+            'name' => $name,
+            'username' => $username,
+            'password' => md5($password)
+        ];
+
+        $userObject->updateData($id, $dataUpdate);
+
+        $data = $userObject->findById($id);
+
+        $success = 'Success!';
+        return $this->view('admin/User/edit', ['success' => $success, 'data'=>$data]);
+    }
+
     public function get_delete() { 
         $id = $_REQUEST['id'];
 

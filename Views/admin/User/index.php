@@ -28,7 +28,7 @@
                     <td><?php echo $item['name']; ?></td>
                     <td><?php echo $item['username']; ?></td>
                     <td>
-                        <a href="" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="?controller=user&action=get_edit&id=<?php echo $item['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
                         <a href="?controller=user&action=get_delete&id=<?php echo $item['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                     </tr>
