@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./public/assets/css/app.css" />
 </head>
 <body>
     
@@ -23,7 +23,7 @@
       </div>
         <div class="header-main">
             <div class="header-logo">
-                <img src="./assets/images/logo.jpg" alt="" />
+                <img src="./public/assets/images/logo.jpg" alt="" />
             </div>
             <div class="header-link">
                 <ul class="header-menu">
@@ -93,7 +93,7 @@
                                   expert instructors with access to innovative learning
                                   opportunities and state-of-the-art facilities.
                                 </p>
-                                <img src="./assets/images/dropdown_menu_1.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_1.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -126,7 +126,7 @@
                                   Information Session, schedule a campus visit, chat online,
                                   email or call one of our friendly Admissions Advisors.
                                 </p>
-                                <img src="./assets/images/dropdown_menu_2.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_2.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -158,7 +158,7 @@
                                   including financial aid, scholarships and payment plans.
                                   College can be affordable!
                                 </p>
-                                <img src="./assets/images/dropdown_menu_3.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_3.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -228,7 +228,7 @@
                                   options, Century College can work directly with employers
                                   to meet the training needs of employees.
                                 </p>
-                                <img src="./assets/images/dropdown_menu_4.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_4.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -262,7 +262,7 @@
                                   campus or take advantage of campus recreational activities
                                   and art and theatre experiences.
                                 </p>
-                                <img src="./assets/images/dropdown_menu_5.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_5.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -296,7 +296,7 @@
                                   classroom, including academic resources, assistive
                                   services, student wellness options and planning support.
                                 </p>
-                                <img src="./assets/images/dropdown_menu_6.jpg" alt="" />
+                                <img src="./public/assets/images/dropdown_menu_6.jpg" alt="" />
                               </div>
                             </div>
                           </div>
@@ -324,7 +324,7 @@
                     </div>
                 </div>
                 <div class="slide-item active">
-                    <img src="./assets/images/slider-1.jpg" alt="">
+                    <img src="./public/assets/images/slider-1.jpg" alt="">
                     <div class="slide-card">
                         <div class="slide-card__title">
                             <h1>Fall 2021 registration is open to ALL students!</h1>
@@ -340,7 +340,7 @@
                     </div>
                 </div>
                 <div class="slide-item">
-                    <img src="./assets/images/slider-3.jpg" alt="">
+                    <img src="./public/assets/images/slider-3.jpg" alt="">
                     <div class="slide-card">
                         <div class="slide-card__title">
                             <h1>College is affordable at Century College!</h1>
@@ -355,7 +355,7 @@
                     </div>
                 </div>
                 <div class="slide-item">
-                    <img src="./assets/images/slider-4.jpg" alt="">
+                    <img src="./public/assets/images/slider-4.jpg" alt="">
                     <div class="slide-card">
                         <div class="slide-card__title">
                             <h1>Save thousands! Earn an associate degree and transfer.</h1>
@@ -370,7 +370,7 @@
                     </div>
                 </div>
                 <div class="slide-item">
-                    <img src="./assets/images/slider-2.jpg" alt="">
+                    <img src="./public/assets/images/slider-2.jpg" alt="">
                     <div class="slide-card">
                         <div class="slide-card__title">
                             <h1>Retrain for a new career!</h1>
@@ -696,7 +696,7 @@
                   <div class="row">
                     <div class="event-panel__item col-12 col-md-4">
                         <div class="event-image">
-                          <img src="./assets/images/event-panel-1.jpg" alt="">
+                          <img src="./public/assets/images/event-panel-1.jpg" alt="">
                         </div>
                         <span class="event-date">
                           <span class="day">24</span>
@@ -718,7 +718,7 @@
                     </div>
                     <div class="event-panel__item col-12 col-md-4">
                         <div class="event-image">
-                          <img src="./assets/images/event-panel-2.jpg" alt="">
+                          <img src="./public/assets/images/event-panel-2.jpg" alt="">
                         </div>
                         <span class="event-date">
                           <span class="day">30</span>
@@ -740,7 +740,7 @@
                     </div>
                     <div class="event-panel__item col-12 col-md-4">
                         <div class="event-image">
-                          <img src="./assets/images/event-panel-3.jpg" alt="">
+                          <img src="./public/assets/images/event-panel-3.jpg" alt="">
                         </div>
                         <span class="event-date">
                           <span class="day">7</span>
@@ -783,14 +783,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-6.jpg" alt="">
+                            <img src="./public/assets/images/path-6.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-1.png" alt="">
+                            <img src="./public/assets/images/icon-path-1.png" alt="">
                             <span>Business Pathway</span>
                           </a>
                         </span>
@@ -800,14 +800,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-3.jpg" alt="">
+                            <img src="./public/assets/images/path-3.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-2.png" alt="">
+                            <img src="./public/assets/images/icon-path-2.png" alt="">
                             <span>Science, Technology, Engineering & Mathematics Pathway</span>
                           </a>
                         </span>
@@ -817,14 +817,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-5.jpg" alt="">
+                            <img src="./public/assets/images/path-5.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-3.png" alt="">
+                            <img src="./public/assets/images/icon-path-3.png" alt="">
                             <span>Health Sciences Pathway</span>
                           </a>
                         </span>
@@ -834,14 +834,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-4.jpg" alt="">
+                            <img src="./public/assets/images/path-4.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-4.png" alt="">
+                            <img src="./public/assets/images/icon-path-4.png" alt="">
                             <span>Industry Pathway</span>
                           </a>
                         </span>
@@ -851,14 +851,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-2.jpg" alt="">
+                            <img src="./public/assets/images/path-2.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-5.png" alt="">
+                            <img src="./public/assets/images/icon-path-5.png" alt="">
                             <span>Human Services Pathway</span>
                           </a>
                         </span>
@@ -868,14 +868,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-7.jpg" alt="">
+                            <img src="./public/assets/images/path-7.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-6.png" alt="">
+                            <img src="./public/assets/images/icon-path-6.png" alt="">
                             <span>Arts & Humanities Pathway</span>
                           </a>
                         </span>
@@ -885,14 +885,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-1.jpg" alt="">
+                            <img src="./public/assets/images/path-1.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-7.png" alt="">
+                            <img src="./public/assets/images/icon-path-7.png" alt="">
                             <span>Social & Behavioral Sciences Pathway</span>
                           </a>
                         </span>
@@ -902,14 +902,14 @@
                       <div class="slide-image">
                         <div class="slide-image__content">
                           <a href="#">
-                            <img src="./assets/images/path-8.jpg" alt="">
+                            <img src="./public/assets/images/path-8.jpg" alt="">
                           </a>
                         </div>
                       </div>
                       <div class="slide-nothing red">
                         <span class="slide-nothing__content">
                           <a href="#">
-                            <img src="./assets/images/icon-path-8.png" alt="">
+                            <img src="./public/assets/images/icon-path-8.png" alt="">
                             <span>Applied Design Pathway</span>
                           </a>
                         </span>
@@ -1011,7 +1011,7 @@
          <div class="row">
           <div class="col-3">
             <div class="footer-logo">
-              <img src="./assets/images/mnstate-logo-sm.png" alt="">
+              <img src="./public/assets/images/mnstate-logo-sm.png" alt="">
             </div>
           </div>
           <div class="col-9">
@@ -1030,6 +1030,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./public/assets/js/main.js"></script>
 </body>
 </html>

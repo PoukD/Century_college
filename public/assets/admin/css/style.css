@@ -1,4 +1,7 @@
 /* Styling for All */
+#header {
+    margin-bottom: 50px;
+}
 .container-fluid{
     margin:0;
 }
@@ -23,6 +26,10 @@ main{
 
 /* Styling for Footter */
 #footer-footer{
+    margin-top: 50px;
     background-color: #ff4757;
 }
 
+.form-login {
+    padding: 0 300px;
+}

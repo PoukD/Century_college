@@ -8,6 +8,10 @@ class UserModel extends BaseModel {
         return $this->all(self::TABLE_NAME);
     }
 
+    public function where($column, $operator, $value, $limit) {
+        return $this->whereCondition(self::TABLE_NAME, $column, $operator, $value, $limit);
+    }
+
     public function findById($id) {
         return $this->find(self::TABLE_NAME, $id);
     }
