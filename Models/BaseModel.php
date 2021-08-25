@@ -58,6 +58,8 @@ class BaseModel extends Database {
 
         $sql = "UPDATE ${table} SET ${dataSetString} WHERE id = ${id}";
         $this->_query($sql);
+
+        $this->_query($sql);
     }
 
     //Xoá theo id

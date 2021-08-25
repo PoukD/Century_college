@@ -19,10 +19,17 @@ class AdminController extends BaseController {
         return $this->view('admin/Login/index', ['data'=>$data]);
     }
 
+    public function update_user() {
+        $user = new UserModel;
+        $id = $_GET['id'];
+        $data = [];
+        echo $user->updateData($id, $data) ;
+    }
+
     public function delete_user() {
         $user = new UserModel;
         $id = $_GET['id'];
-        $user->destroy($id);
+        echo $user->destroy($id) ;
     }
 
 }
