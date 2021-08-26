@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./public/assets/css/app.css" />
 </head>
 <body>
-    
+
+
+
     <header>
       <div class="header-notification gray-dark">
         <p>Century College is OPEN with on-campus and virtual services. <a href="#">View up-to-date student support services and hours ></a></p>
@@ -451,19 +453,25 @@
                                   </div>             
                                 </div>
                                 <div class="events" id="campus">
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">24</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Technical Programs: Discover Century Session & Campus Tour</span>
-                                        <span class="event-location">East Campus, TBD</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
+                                  <?php if(isset($campus)) { 
+                                    foreach ($campus as $item) {
+                                  ?>
+                                    <div class="event-item">
+                                      <a href="#">
+                                        <span class="event-date">
+                                          <span class="day"><?php echo $item['day']; ?></span>
+                                          <span class="month"><?php echo $item['month']; ?></span>
+                                        </span>
+                                        <span class="event-content">
+                                          <span class="event-title"><?php echo $item['title']; ?></span>
+                                          <span class="event-location"><?php echo $item['description']; ?></span>
+                                        </span>
+                                      </a>
+                                    </div>
+
+                                    <?php } ?>
+                                  <?php } ?>
+                                  <!-- <div class="event-item">
                                     <a href="#">
                                       <span class="event-date">
                                         <span class="day">25</span>
@@ -522,7 +530,7 @@
                                         <span class="event-location">West Campus, W2290</span>
                                       </span>
                                     </a>
-                                  </div>
+                                  </div> -->
                                   <div class="event-view-all">
                                     <a href="#">
                                       <span>View All</span>

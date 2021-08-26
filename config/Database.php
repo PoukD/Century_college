@@ -1,5 +1,4 @@
 <?php
-
 class Database {
     const DB_HOST = 'localhost';
     const DB_USERNAME = 'root';
@@ -17,5 +16,4 @@ class Database {
 
         return false;
     }
-
 }

@@ -11,7 +11,8 @@ class UserController extends BaseController {
         $user = new UserModel();
         $data = $user->getAll();
 
-        return $this->view('admin/User/index', ['data'=>$data]);
+
+        return $this->view('admin/User/index', ['userList'=>$data]);
     }
 
     public function get_add() {  
@@ -87,7 +88,7 @@ class UserController extends BaseController {
         $userObject->destroy($id);
 
         $data = $userObject->getAll();
-        return $this->view('admin/User/index', ['success'=>'Deleted!', 'data'=>$data]);
+        return $this->view('admin/User/index', ['success'=>'Deleted!', 'userList'=>$data]);
     }
 
 }
