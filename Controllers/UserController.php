@@ -11,7 +11,6 @@ class UserController extends BaseController {
         $user = new UserModel();
         $data = $user->getAll();
 
-
         return $this->view('admin/User/index', ['userList'=>$data]);
     }
 

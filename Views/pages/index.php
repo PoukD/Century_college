@@ -468,7 +468,6 @@
                                         </span>
                                       </a>
                                     </div>
-
                                     <?php } ?>
                                   <?php } ?>
                                   <!-- <div class="event-item">

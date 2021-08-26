@@ -45,17 +45,5 @@ class AdminController extends BaseController {
         }
     }
 
-    public function update_user() {
-        $user = new UserModel;
-        $id = $_GET['id'];
-        $data = [];
-        echo $user->updateData($id, $data) ;
-    }
-
-    public function delete_user() {
-        $user = new UserModel;
-        $id = $_GET['id'];
-        echo $user->destroy($id) ;
-    }
 
 }
