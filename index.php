@@ -1,5 +1,6 @@
 <?php
-
+    session_start();
+    
     require './config/Database.php';
     require './Models/BaseModel.php';
     require './Controllers/BaseController.php';

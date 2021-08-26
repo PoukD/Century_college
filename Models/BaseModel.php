@@ -26,6 +26,20 @@ class BaseModel extends Database {
         return $data;
     }
 
+    public function whereCondition($table, $column, $operator='=', $value, $limit = 15) {
+        $sql = "SELECT * FROM ${table} WHERE ${column} ${operator} '".$value."' LIMIT ${limit}";
+        $query = $this->_query($sql);
+        if($limit=1) {
+            return mysqli_fetch_assoc($query);
+        }
+        
+        $data = [];
+        while ($row = mysqli_fetch_assoc($query)) {
+            array_push($data, $row);
+        }
+        return $data;
+    }
+
     //Tìm theo id
     public function find($table, $id) {
         $sql = "SELECT * FROM ${table} WHERE id = ${id} LIMIT 1";

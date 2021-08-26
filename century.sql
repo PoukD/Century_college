@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2021 at 03:46 PM
+-- Generation Time: Aug 25, 2021 at 07:15 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -24,42 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `accountemployee`
+-- Table structure for table `categories`
 --
 
-CREATE TABLE `accountemployee` (
-  `id` int(11) NOT NULL,
-  `full_name` varchar(255) NOT NULL,
-  `user_name` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `post` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `accountemployee`
---
-
-INSERT INTO `accountemployee` (`id`, `full_name`, `user_name`, `password`, `post`) VALUES
-(1, 'khoun', 'admin', 'abc123', 'quanly'),
-(4, 'Nguyen Van A', 'nguyenA', 'abc123', 'nhanvien');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `category`
---
-
-CREATE TABLE `category` (
+CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `name` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
   `slug` text COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `category`
+-- Dumping data for table `categories`
 --
 
-INSERT INTO `category` (`id`, `name`, `slug`) VALUES
+INSERT INTO `categories` (`id`, `name`, `slug`) VALUES
 (1, 'Campus', 'campus'),
 (2, 'Student', 'student'),
 (3, 'News', 'news');
@@ -98,22 +76,16 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`) VALUES
-(1, 'Quản Trị Viên', 'admin', '25d55ad283aa400af464c76d713c07ad');
+(5, 'Quản Trị Viên', 'admin', '25d55ad283aa400af464c76d713c07ad');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `accountemployee`
+-- Indexes for table `categories`
 --
-ALTER TABLE `accountemployee`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `category`
---
-ALTER TABLE `category`
+ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -133,15 +105,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `accountemployee`
+-- AUTO_INCREMENT for table `categories`
 --
-ALTER TABLE `accountemployee`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `category`
---
-ALTER TABLE `category`
+ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
@@ -154,7 +120,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
