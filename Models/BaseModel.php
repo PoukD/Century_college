@@ -26,10 +26,10 @@ class BaseModel extends Database {
         return $data;
     }
 
-    public function whereCondition($table, $column, $operator='=', $value, $limit = 15) {
+    public function whereCondition($table, $column, $operator='=', $value, $limit = 10000) {
         $sql = "SELECT * FROM ${table} WHERE ${column} ${operator} '".$value."' LIMIT ${limit}";
         $query = $this->_query($sql);
-        if($limit=1) {
+        if($limit==1) {
             return mysqli_fetch_assoc($query);
         }
         
@@ -49,6 +49,11 @@ class BaseModel extends Database {
 
     //Tạo mới
     public function create($table, $data=[]) {
+
+        // $data = [
+        //     'columns' => 'value',
+        // ];
+
         $columns = implode(',', array_keys($data));
         
         $newValues = array_map(function($value) {
@@ -71,7 +76,6 @@ class BaseModel extends Database {
         $dataSetString = implode(',', $dataSets);
 
         $sql = "UPDATE ${table} SET ${dataSetString} WHERE id = ${id}";
-        $this->_query($sql);
 
         $this->_query($sql);
     }
