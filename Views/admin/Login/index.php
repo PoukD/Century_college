@@ -2,7 +2,6 @@
 
 <div class="container">
     <div class="form-login">
-
         <h3>LOGIN</h3>
         <hr>
         <?php if(isset($error)) { ?>

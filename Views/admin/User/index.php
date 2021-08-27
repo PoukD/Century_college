@@ -35,8 +35,7 @@
                         <a href="?controller=user&action=get_delete&id=<?php echo $item['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                     </tr>
-                <?php } ?>
-            <?php } ?>
+                <?php } }?>
         </tbody>
     </table>
 </div>
