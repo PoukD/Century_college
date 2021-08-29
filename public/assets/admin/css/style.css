@@ -26,11 +26,12 @@ main{
 
 
 #footer-footer{
-    background-color: #ff4757;
+    background-color: #B9371D;
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
+    /* padding : 1%; */
 }
 
 .form-login {
