@@ -24,12 +24,16 @@ main{
 }
 
 
-/* Styling for Footter */
+
 #footer-footer{
-    margin-top: 50px;
     background-color: #ff4757;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .form-login {
     padding: 0 300px;
 }
+

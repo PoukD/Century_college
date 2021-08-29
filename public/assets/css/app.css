@@ -1267,7 +1267,12 @@ body {
     opacity: 1;
     left: 77%;
 }
-
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
 .footer-link {
     padding: 30px 50px 80px 30px;
     background-color: var(--gray-light);
