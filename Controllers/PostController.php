@@ -11,83 +11,91 @@ class PostController extends BaseController {
         $post = new PostModel();
         $data = $post->getAll();
 
-        return $this->view('admin/User/index', ['userList'=>$data]);
+        return $this->view('admin/Posts/index', ['postsList'=>$data]);
     }
 
     public function get_add() {  
-        return $this->view('admin/User/add');
+        return $this->view('admin/Posts/add');
     }
 
     public function post_add() {  
-        $userObject = new UserModel();
+        $postsObject = new PostModel();
 
-        $name     = $_POST['name'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $category_id = $_POST['category_id'];
+        $day = $_POST['day'];
+        $month = $_POST['month'];
+        $title = $_POST['title'];
+        $description = $_POST['description'];
 
-        if (!$name || !$username || !$password) {
+        if (!$category_id || !$day || !$month || !$title || !$description) {
             $error = 'Please enter enough information!';
-            return $this->view('admin/User/add', ['error' => $error]);
+            return $this->view('admin/Posts/add', ['error' => $error]);
         }
 
         $data = [
-            'name' => $name,
-            'username' => $username,
-            'password' => md5($password)
+            'category_id' => $category_id,
+            'day' => $day,
+            'month' => $month,
+            'title' => $title,
+            'description' => $description
         ];
 
-        $userObject->store($data);
+        $postsObject->store($data);
 
         $success = 'Success!';
-        return $this->view('admin/User/add', ['success' => $success]);
+        return $this->view('admin/Posts/add', ['success' => $success]);
     }
 
     public function get_edit() {  
         $id = $_REQUEST['id'];
 
-        $userObject = new UserModel();
-        $data = $userObject->findById($id);
+        $postsObject = new PostModel();
+        $data = $postsObject->findById($id);
 
-        return $this->view('admin/User/edit', ['data'=>$data]);
+        return $this->view('admin/Posts/edit', ['data'=>$data]);
     }
 
     public function post_edit() {  
-        $userObject = new UserModel();
+        $postsObject = new PostModel();
 
         $id = $_REQUEST['id'];
         
-        $name     = $_POST['name'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $category_id = $_POST['category_id'];
+        $day = $_POST['day'];
+        $month = $_POST['month'];
+        $title = $_POST['title'];
+        $description = $_POST['description'];
 
-        if (!$name || !$username ) {
-            $data = $userObject->findById($id);
+        if (!$category_id || !$day || !$month || !$title || !$description) {
+            $data = $postsObject->findById($id);
             $error = 'Please enter enough information!';
-            return $this->view('admin/User/edit', ['error' => $error, 'data'=>$data]);
+            return $this->view('admin/Posts/edit', ['error' => $error, 'data'=>$data]);
         }
 
         $dataUpdate = [
-            'name' => $name,
-            'username' => $username,
-            'password' => md5($password)
+            'category_id' => $category_id,
+            'day' => $day,
+            'month' => $month,
+            'title' => $title,
+            'description' => $description
         ];
 
-        $userObject->updateData($id, $dataUpdate);
+        $postsObject->updateData($id, $dataUpdate);
 
-        $data = $userObject->findById($id);
+        $data = $postsObject->findById($id);
 
         $success = 'Success!';
-        return $this->view('admin/User/edit', ['success' => $success, 'data'=>$data]);
+        return $this->view('admin/Posts/edit', ['success' => $success, 'data'=>$data]);
     }
 
     public function get_delete() { 
         $id = $_REQUEST['id'];
 
-        $userObject = new UserModel();
-        $userObject->destroy($id);
+        $postsObject = new PostModel();
+        $postsObject->destroy($id);
 
-        $data = $userObject->getAll();
-        return $this->view('admin/User/index', ['success'=>'Deleted!', 'userList'=>$data]);
+        $data = $postsObject->getAll();
+        return $this->view('admin/Posts/index', ['success'=>'Deleted!', 'postsList'=>$data]);
     }
 
 }

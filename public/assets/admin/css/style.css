@@ -23,7 +23,9 @@ main{
     flex-wrap: nowrap;
 }
 
-
+#btnMethod{
+    width: 70px;
+}
 
 #footer-footer{
     background-color: #B9371D;
@@ -32,6 +34,11 @@ main{
     left: 0px;
     right: 0px;
     /* padding : 1%; */
+    background-color: #ff4757;
+    /* position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
 }
 
 .form-login {

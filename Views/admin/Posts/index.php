@@ -4,9 +4,9 @@
 <?php } ?>
 <div class="container">
 
-    <h3>USER LIST</h3>
+    <h3>Posts List</h3>
     <hr>
-    <a href="index.php?controller=post&action=get_add"class="btn btn-primary">Add New User</a>
+    <a href="index.php?controller=post&action=get_add"class="btn btn-primary">Add New Post</a>
     
     <?php if(isset($success)) { ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -19,22 +19,26 @@
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Username</th>
+        <th scope="col">Day</th>
+        <th scope="col">Month</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
         <th scope="col">Method</th>
         </tr>
         </thead>
         <tbody>
-            <?php if(isset($userList)) { ?>
+            <?php if(isset($postsList)) { ?>
                 <?php $i = 1;
-                foreach($userList as $item) { ?>
+                foreach($postsList as $item) { ?>
                     <tr>
                     <th scope="row"><?php echo $i++; ?></th>
-                    <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['username']; ?></td>
+                    <td><?php echo $item['day']; ?></td>
+                    <td><?php echo $item['month']; ?></td>
+                    <td><?php echo $item['title']; ?></td>
+                    <td><?php echo $item['description']; ?></td>
                     <td>
-                        <a href="?controller=user&action=get_edit&id=<?php echo $item['id']; ?>"id="btnMethod" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="?controller=user&action=get_delete&id=<?php echo $item['id']; ?>" id="btnMethod"class="btn btn-danger btn-sm">Delete</a>
+                        <a href="?controller=post&action=get_edit&id=<?php echo $item['id']; ?>" class="btn btn-primary btn-sm" id="btnMethod">Edit</a>
+                        <a href="?controller=post&action=get_delete&id=<?php echo $item['id']; ?>" class="btn btn-danger btn-sm"  id="btnMethod">Delete</a>
                     </td>
                     </tr>
                 <?php } }?>
