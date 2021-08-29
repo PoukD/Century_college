@@ -23,14 +23,16 @@ main{
     flex-wrap: nowrap;
 }
 
-
+#btnMethod{
+    width: 70px;
+}
 
 #footer-footer{
     background-color: #ff4757;
-    position: absolute;
+    /* position: fixed;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    right: 0px; */
 }
 
 .form-login {
