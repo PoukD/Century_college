@@ -16,9 +16,11 @@
     <div id="header">
       <div class="container-fluid">
           <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+          <a href="index.php?" class="btn btn-primary" style="margin-right:20px"><i class="bi bi-arrow-bar-left"></i>Back To Website &nbsp</a>
           <a href="index.php?controller=admin" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
               <span class="fs-4">Administration</span>
           </a>
+          
 
           <ul class="nav nav-pills">
               <?php if(isset($_SESSION['user'])) { ?>

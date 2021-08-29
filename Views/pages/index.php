@@ -59,7 +59,7 @@
                       </div>
                     </li>
                     <li class="header-menu__item">
-                      <a href="#" class="header-login"
+                      <a href="index.php?controller=admin&action=get_login" class="header-login"
                         ><i class="fas fa-lock"></i> Login</a
                       >
                     </li>
