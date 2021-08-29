@@ -796,7 +796,7 @@
             </div>
             <div class="footer-item col-12 col-sm-6 col-md-3">
               <div class="">
-                <h3 class="footer-item__title">Information</h3>
+                <h3 class="footer-item__title">Resources</h3>
                 <ul>
                   <li><a href="">Bookstore</a></li>
                   <li><a href="">Computer Centers</a></li>
@@ -810,7 +810,7 @@
             </div>
             <div class="footer-item col-12 col-sm-6 col-md-3">
               <div class="">
-                <h3 class="footer-item__title">Information</h3>
+                <h3 class="footer-item__title">News Center</h3>
                 <ul>
                   <li><a href="">Calendar</a></li>
                   <li><a href="">Employment</a></li>
@@ -819,7 +819,7 @@
             </div>
             <div class="footer-item col-12 col-sm-6 col-md-3">
               <div class="">
-                <h3 class="footer-item__title">Information</h3>
+                <h3 class="footer-item__title">Contact</h3>
                 <div class="contact">
                   <div class="address">
                     <span>3300 Century Ave N</span>
