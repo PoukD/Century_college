@@ -33,8 +33,8 @@ class AdminController extends BaseController {
             if ($user['password'] == $password) {
                 $_SESSION['user'] = $user;
                 
-                header("Location: index.php?controller=admin");
-                //return $this->view('admin/User/index');
+                header("Location: index.php?controller=user");
+                // return $this->view('admin/User/index');
             } else {
                 $error = 'Sai tài khoản hoặc mật khẩu!';
                 return $this->view('admin/Login/index', ['error'=>$error]);
