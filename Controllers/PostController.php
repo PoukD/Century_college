@@ -5,7 +5,7 @@ class PostController extends BaseController {
     public function __construct() {
         $this->loadModel('PostModel');
     }
-
+    
     
     public function index() {  
         $post = new PostModel();
@@ -23,7 +23,7 @@ class PostController extends BaseController {
 
         $category_id = $_POST['category_id'];
         $day = $_POST['day'];
-        $month = $_POST['month'];
+        $month = strtoupper($_POST['month']);
         $title = $_POST['title'];
         $description = $_POST['description'];
 
@@ -62,7 +62,7 @@ class PostController extends BaseController {
         
         $category_id = $_POST['category_id'];
         $day = $_POST['day'];
-        $month = $_POST['month'];
+        $month = strtoupper($_POST['month']);
         $title = $_POST['title'];
         $description = $_POST['description'];
 

@@ -451,7 +451,7 @@
                                       <a href="#news" class="news-tab__item"><i class="fas fa-newspaper"></i> <span>News</span> </a>
                                     </div>
                                   </div>             
-                                </div>
+                                </div> 
                                 <div class="events" id="campus">
                                   <?php if(isset($campus)) { 
                                     foreach ($campus as $item) {
