@@ -470,145 +470,31 @@
                                     </div>
                                     <?php } ?>
                                   <?php } ?>
-                                  <!-- <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">25</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">FREE Mobile COVID-19 Vaccination Clinic</span>
-                                        <span class="event-location">West Campus, Parking Lot N</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">30</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Virtual Discover Century Information Session</span>
-                                        <span class="event-location">Virtual - Zoom</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">31</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Century College Theatre - Auditions for “The Curious Incident of the Dog in the Nighttime”</span>
-                                        <span class="event-location">West Campus Theatre</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">1</span>
-                                        <span class="month">SEP</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Century College Theatre - Auditions for “The Curious Incident of the Dog in the Nighttime”</span>
-                                        <span class="event-location">West Campus Theatre</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">7</span>
-                                        <span class="month">SEP</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Liberal & Fine Arts: Discover Century Session & Campus Tour</span>
-                                        <span class="event-location">West Campus, W2290</span>
-                                      </span>
-                                    </a>
-                                  </div> -->
                                   <div class="event-view-all">
                                     <a href="#">
                                       <span>View All</span>
                                     </a>
                                   </div>
                                 </div>
+
                                 <div class="events" id="student">
+                                  <?php if(isset($student)) { 
+                                      foreach ($student as $item) {
+                                  ?>
                                   <div class="event-item">
                                     <a href="#">
                                       <span class="event-date">
-                                        <span class="day">20</span>
-                                        <span class="month">AUG</span>
+                                        <span class="day"><?php echo $item['day']; ?></span>
+                                        <span class="month"><?php echo $item['month']; ?></span>
                                       </span>
                                       <span class="event-content">
-                                        <span class="event-title">Drop-in Hours for How to Navigate Your Online Courses Using D2L</span>
-                                        <span class="event-location">https://minnstate.zoom.us/j/96462287405</span>
+                                        <span class="event-title"><?php echo $item['title']; ?></span>
+                                        <span class="event-location"><?php echo $item['description']; ?></span>
                                       </span>
                                     </a>
                                   </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">23</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">How to Navigate Your Online Classes Using D2L</span>
-                                        <span class="event-location">https://minnstate.zoom.us/j/98605711040</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">25</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">FREE Mobile COVID-19 Vaccination Clinic</span>
-                                        <span class="event-location">West Campus, Parking Lot N</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">25</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">How to Navigate Your Online Classes Using D2L</span>
-                                        <span class="event-location">https://minnstate.zoom.us/j/94705352454</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">27</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Drop-in Hours for How to Navigate Your Online Courses Using D2L</span>
-                                        <span class="event-location">https://minnstate.zoom.us/j/91749855072</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">31</span>
-                                        <span class="month">AUG</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Century College Theatre - Auditions for “The Curious Incident of the Dog in the Nighttime”</span>
-                                        <span class="event-location">West Campus Theatre</span>
-                                      </span>
-                                    </a>
-                                  </div>
+                                  <?php } ?>
+                                  <?php } ?>
                                   <div class="event-view-all">
                                     <a href="#">
                                       <span>View All</span>
@@ -616,79 +502,23 @@
                                   </div>
                                 </div>
                                 <div class="events" id="news">
+                                  <?php if(isset($news)) { 
+                                      foreach ($news as $item) {
+                                  ?>
                                   <div class="event-item">
                                     <a href="#">
                                       <span class="event-date">
-                                        <span class="day">19</span>
-                                        <span class="month">JUL</span>
+                                        <span class="day"><?php echo $item['day']; ?></span>
+                                        <span class="month"><?php echo $item['month']; ?></span>
                                       </span>
                                       <span class="event-content">
-                                        <span class="event-title">Meet Century College Student Madeline Dahlstrom</span>
-                                        <span class="event-location">When Century College student Madeline Dahlstrom found out that she had been</span>
+                                        <span class="event-title"><?php echo $item['title']; ?></span>
+                                        <span class="event-location"><?php echo $item['description']; ?></span>
                                       </span>
                                     </a>
                                   </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">15</span>
-                                        <span class="month">JUL</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Meet Century College Alum Mitchell Heim</span>
-                                        <span class="event-location">Century College Alum Mitch Heim loves creating and designing things on a computer, and seeing his designs come to life.  In high school, he was fascinated with robotics, and he dedicated long hours after class and on weekends to working on his creative projects. He planned to go into mechanical engineering, until he was steered toward aerospace engineering.</span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">8</span>
-                                        <span class="month">JUL</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Meet Century College Student Alexis Cortes Ruiz</span>
-                                        <span class="event-location">Alexis Cortes Ruiz has found a second home at Century College.  "Coming here was one of best decisions of my life.  I love Minnesota and Century College. </span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">25</span>
-                                        <span class="month">JUL</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Meet Century College Alum Josh Englert </span>
-                                        <span class="event-location">Josh Englert was in the beginning of his college career, taking his general educational requirements at a local community college,&nbsp;when his video business began to take off.&nbsp; He had always been interested in creating videos, and had taught himself&nbsp;how&nbsp;to create music and sports videos, from an early age.&nbsp; He studied&nbsp;how the videos were done and eventually found his own distinctive style.&nbsp;
-                                        </span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">14</span>
-                                        <span class="month">JUL</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Century College Aims to Expand Workers in the Solar Industry  with Target Corporation Solar Scholarship program</span>
-                                        <span class="event-location">White Bear Lake, Minnesota – Target Corporation is providing Century College with a $100,000 grant to create the Target Corporation Solar Scholarship program. The program provides financial support to more than 20 newly-enrolled students in the Solar and Renewable Energy program at Century College for Fall Semester 2021 through scholarships for tuition and supplies.  </span>
-                                      </span>
-                                    </a>
-                                  </div>
-                                  <div class="event-item">
-                                    <a href="#">
-                                      <span class="event-date">
-                                        <span class="day">8</span>
-                                        <span class="month">JUL</span>
-                                      </span>
-                                      <span class="event-content">
-                                        <span class="event-title">Meet Century College Alum Jordan Anderson</span>
-                                        <span class="event-location">After working as an IT professional, Jordan Anderson knew that he wanted to take his career in a different direction.  He wanted to pursue a career in film and videography.</span>
-                                      </span>
-                                    </a>
-                                  </div>
+                                  <?php } ?>
+                                  <?php } ?>
                                   <div class="event-view-all">
                                     <a href="#">
                                       <span>View All</span>
@@ -1032,6 +862,9 @@
         </div>
       </div>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>      
+    
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

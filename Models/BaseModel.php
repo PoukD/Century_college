@@ -47,12 +47,7 @@ class BaseModel extends Database {
         return mysqli_fetch_assoc($query);
     }
 
-    //Tạo mới
     public function create($table, $data=[]) {
-
-        // $data = [
-        //     'columns' => 'value',
-        // ];
 
         $columns = implode(',', array_keys($data));
         

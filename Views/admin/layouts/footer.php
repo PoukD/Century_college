@@ -1,7 +1,7 @@
 <div id="footer-footer" class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
             <div class="col-md-12 text-center">
-                <a href="#" class="text-decoration-none text-white">&copy; 2021 All rights reserved, Food House. Developed By - CSE485</a>
+                <a href="#" class="text-decoration-none text-white">Deverlop By Khounpasird & Pham Thu Ha</a>
             </div>
 
         </footer>
