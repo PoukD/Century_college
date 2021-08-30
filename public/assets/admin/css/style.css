@@ -1,6 +1,7 @@
 /* Styling for All */
 #header {
     margin-bottom: 50px;
+    background-color: #CB4A20;
 }
 .container-fluid{
     margin:0;
@@ -28,20 +29,13 @@ main{
 }
 
 #footer-footer{
-    background-color: #B9371D;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    /* padding : 1%; */
-    background-color: #ff4757;
-    /* position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px; */
+    background-color: #CB4A20;
 }
 
 .form-login {
     padding: 0 300px;
 }
 
+.adminspan,.ulheader>li>a{
+    color:white;
+}
