@@ -9,6 +9,8 @@ class AdminController extends BaseController {
     }
 
     public function index() { 
+        $userObject=new UserModel;
+        // var_dump($userObject);
         return $this->view('admin/index');
     }
 
@@ -30,14 +32,17 @@ class AdminController extends BaseController {
         if ($user) {
             if ($user['password'] == $password) {
                 $_SESSION['user'] = $user;
-                header("Location: index.php?controller=user");
+                // header("Location: index.php?controller=user");
                 // return $this->view('admin/User/index');
+      
+                header("Location: index.php?controller=admin");
+                return $this->view('admin/User/index');
             } else {
-                $error = 'Sai tài khoản hoặc mật khẩu!';
+                $error = 'Wrong username or password!';
                 return $this->view('admin/Login/index', ['error'=>$error]);
             }
         } else {
-            $error = 'Sai tài khoản hoặc mật khẩu!';
+            $error = 'Wrong account or password!';
             return $this->view('admin/Login/index', ['error'=>$error]);
         }
     }

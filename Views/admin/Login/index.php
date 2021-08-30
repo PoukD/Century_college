@@ -1,5 +1,7 @@
 <?php include './Views/admin/layouts/header.php'; ?>
-
+<?php if(isset($_SESSION['user'])) {
+    unset($_SESSION['user']);
+ }?>
 <div class="container">
     <div class="form-login">
         <h3>LOGIN</h3>

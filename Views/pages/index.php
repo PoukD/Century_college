@@ -59,7 +59,7 @@
                       </div>
                     </li>
                     <li class="header-menu__item">
-                      <a href="#" class="header-login"
+                      <a href="index.php?controller=admin&action=get_login" class="header-login"
                         ><i class="fas fa-lock"></i> Login</a
                       >
                     </li>
@@ -451,7 +451,7 @@
                                       <a href="#news" class="news-tab__item"><i class="fas fa-newspaper"></i> <span>News</span> </a>
                                     </div>
                                   </div>             
-                                </div>
+                                </div> 
                                 <div class="events" id="campus">
                                   <?php if(isset($campus)) { 
                                     foreach ($campus as $item) {
