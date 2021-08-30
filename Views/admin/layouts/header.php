@@ -27,7 +27,6 @@
                 <li class="nav-item"><a href="index.php?controller=admin" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="index.php?controller=user" class="nav-link">Users</a></li>
                 <li class="nav-item"><a href="index.php?controller=post" class="nav-link">Post</a></li>
-                <li class="nav-item"><a href="index.php?controller=category" class="nav-link">Category</a></li>
                 <li class="nav-item"><a href="index.php?controller=admin&action=logout" class="nav-link">Logout</a></li>
               <?php } else { 
               }

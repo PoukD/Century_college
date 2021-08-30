@@ -4,14 +4,18 @@ class AdminController extends BaseController {
 
     public function __construct() {
         $this->loadModel('UserModel');
-        $this->loadModel('CategoryModel');
         $this->loadModel('PostModel');
     }
 
     public function index() { 
         $userObject=new UserModel;
-        // var_dump($userObject);
-        return $this->view('admin/index');
+        $postObject = new PostModel();
+
+        $data_user = $userObject->getAll();
+        $data_post = $postObject->getAll();    
+
+
+        return $this->view('admin/index',['data_user'=>$data_user,'data_post'=>$data_post]); 
     }
 
     public function logout() {
